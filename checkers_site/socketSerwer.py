@@ -6,5 +6,5 @@ s.listen(5)
 
 while True:
     clientsocket, address = s.accept()
-    print(f"adres odbiorcy = {address}")
+    print(f"adres odbiorcy = {socket.gethostname()}")
     clientsocket.send(bytes("send info", "utf-8"))
